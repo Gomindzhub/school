@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regitration</title>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+<script defer src="./script.js"></script>
+<style type="text/css">
+    body{
+        background-image: url(./imagies/kotu.jpg );
+        background-repeat: no-repeat;
+        background-size: 1500px 1000px;
+        
+    }
+    #ui{
+        background-color: #333;
+        padding: 20px;
+        margin-top:50px;
+        border-radius: 50px;
+    }
+   
+  #ui label{
+      color:#fff;
+  }
+  #vp{
+      color:#fff;
+  }
+
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class = "col-lg-3"></div>
+
+            <div class = "col-lg-6">
+                <div id ="ui">
+                   <h1 class="text-center" id="vp">REGISTRATION FORM</h1>
+                    <form class = "form-group text-center">
+                        <div class = "row">
+                            <div class = "col-lg-6" >
+                                <label>First Name:</label>
+                                <input type="text" name = "fname" id="first-name" class = "form-control" placeholder="Enter your firstName">
+
+                            </div>
+
+                            <div class = "col-lg-6" >
+                                <label>Middle Name:</label>
+                                <input type="text" name = "Mname" id="middle-name" class = "form-control" placeholder="Middle Name If Any">
+
+                            </div>
+                            
+                            <div class = "col-lg-6" >
+                                <label>Last Name:</label>
+                                <input type="text" name = "lname" id="last-name" class = "form-control" placeholder="Enter your lastName">
+
+                            </div>
+
+
+                        </div>
+                            <br>
+                        <label>E-mail</label>
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email " id="E-mail">
+                              <br>
+                        <div class="row" >
+
+                        <div class = "col-lg-6" >
+                            <label>Password:</label>
+                            <input type="Password" name = "password" class = "form-control" placeholder="Enter your password" id="password?">
+
+                        </div>
+                        <div class = "col-lg-6">
+                            <label>Confirm password:</label>
+                            <input type="password" name = "password" class = "form-control" placeholder="Confirm password">
+
+                        </div>
+                    </div>
+                         <br>
+                    <select class="form-control">
+                        <option>Choose your Gender..</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <br>
+
+                    <input type="submit" name="submit" value = "submit" class="btn btn-primary btn-block btn-lg " id="btn">
+                      
+                    </form>
+                </div>
+
+            </div>
+
+            <div class = "col-lg-3"></div>
+            
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
